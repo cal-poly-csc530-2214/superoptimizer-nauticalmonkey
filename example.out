@@ -1,0 +1,2790 @@
+Searching for programs with 4 operations.
+
+Found a 4-operation program:
+   neg   r1,rx
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   neg   r1,rx
+   shrs  r2,rx,#31
+   sub   r3,r2,r1
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) - -(x)) ^ (x >>s 31))
+
+Found a 4-operation program:
+   neg   r1,rx
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   neg   r1,rx
+   shrs  r2,rx,#31
+   xor   r3,r2,r1
+   sub   r4,r2,r3
+   Expr: ((x >>s 31) - ((x >>s 31) ^ -(x)))
+
+Found a 4-operation program:
+   neg   r1,rx
+   shrs  r2,r1,#31
+   add   r3,r2,r1
+   xor   r4,r3,r2
+   Expr: (((-(x) >>s 31) + -(x)) ^ (-(x) >>s 31))
+
+Found a 4-operation program:
+   neg   r1,rx
+   shrs  r2,r1,#31
+   sub   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((-(x) >>s 31) - x) ^ (-(x) >>s 31))
+
+Found a 4-operation program:
+   neg   r1,rx
+   shrs  r2,r1,#31
+   xor   r3,r2,rx
+   sub   r4,r2,r3
+   Expr: ((-(x) >>s 31) - ((-(x) >>s 31) ^ x))
+
+Found a 4-operation program:
+   neg   r1,rx
+   shrs  r2,r1,#31
+   xor   r3,r2,r1
+   sub   r4,r3,r2
+   Expr: (((-(x) >>s 31) ^ -(x)) - (-(x) >>s 31))
+
+Found a 4-operation program:
+   add   r1,rx,1
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   add   r1,rx,1
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   add   r1,rx,-2
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   add   r1,rx,-2
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   add   r1,rx,2
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   add   r1,rx,2
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   add   r1,rx,#-2147483648
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   add   r1,rx,#-2147483648
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   add   r1,rx,#-2147483648
+   shrs  r2,r1,#31
+   sub   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x + 0x80000000) >>s 31) - x) ^ ((x + 0x80000000) >>s 31))
+
+Found a 4-operation program:
+   add   r1,rx,#-2147483648
+   shrs  r2,r1,#31
+   xor   r3,r2,rx
+   sub   r4,r2,r3
+   Expr: (((x + 0x80000000) >>s 31) - (((x + 0x80000000) >>s 31) ^ x))
+
+Found a 4-operation program:
+   add   r1,rx,rx
+   shrs  r2,rx,#30
+   and   r3,r2,r1
+   sub   r4,rx,r3
+   Expr: (x - ((x >>s 30) & (x + x)))
+
+Found a 4-operation program:
+   add   r1,rx,rx
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   add   r1,rx,rx
+   shrs  r2,rx,#31
+   and   r3,r2,r1
+   sub   r4,rx,r3
+   Expr: (x - ((x >>s 31) & (x + x)))
+
+Found a 4-operation program:
+   add   r1,rx,rx
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   add   r1,rx,rx
+   shrs  r2,rx,#31
+   shl   r3,r1,r2
+   sub   r4,r3,rx
+   Expr: (((x + x) << (x >>s 31)) - x)
+
+Found a 4-operation program:
+   sub   r1,rx,1
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   sub   r1,rx,1
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   sub   r1,rx,1
+   shrs  r2,r1,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x - 1) >>s 31) + x) ^ ((x - 1) >>s 31))
+
+Found a 4-operation program:
+   sub   r1,rx,1
+   shrs  r2,r1,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x - 1) >>s 31) ^ x) - ((x - 1) >>s 31))
+
+Found a 4-operation program:
+   sub   r1,rx,-2
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   sub   r1,rx,-2
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   sub   r1,rx,2
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   sub   r1,rx,2
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   sub   r1,rx,#-2147483648
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   sub   r1,rx,#-2147483648
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   sub   r1,rx,#-2147483648
+   shrs  r2,r1,#31
+   sub   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x - 0x80000000) >>s 31) - x) ^ ((x - 0x80000000) >>s 31))
+
+Found a 4-operation program:
+   sub   r1,rx,#-2147483648
+   shrs  r2,r1,#31
+   xor   r3,r2,rx
+   sub   r4,r2,r3
+   Expr: (((x - 0x80000000) >>s 31) - (((x - 0x80000000) >>s 31) ^ x))
+
+Found a 4-operation program:
+   sub   r1,1,rx
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   sub   r1,1,rx
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   sub   r1,-2,rx
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   sub   r1,-2,rx
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   sub   r1,2,rx
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   sub   r1,2,rx
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   sub   r1,#-2147483648,rx
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   sub   r1,#-2147483648,rx
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   sub   r1,#-2147483648,rx
+   shrs  r2,r1,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((0x80000000 - x) >>s 31) + x) ^ ((0x80000000 - x) >>s 31))
+
+Found a 4-operation program:
+   sub   r1,#-2147483648,rx
+   shrs  r2,r1,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((0x80000000 - x) >>s 31) ^ x) - ((0x80000000 - x) >>s 31))
+
+Found a 4-operation program:
+   sub   r1,rx,rx
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   sub   r1,rx,rx
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   and   r1,rx,1
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   and   r1,rx,1
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   and   r1,rx,-2
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   and   r1,rx,-2
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   and   r1,rx,-2
+   shrs  r2,r1,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x & -2) >>s 31) + x) ^ ((x & -2) >>s 31))
+
+Found a 4-operation program:
+   and   r1,rx,-2
+   shrs  r2,r1,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x & -2) >>s 31) ^ x) - ((x & -2) >>s 31))
+
+Found a 4-operation program:
+   and   r1,rx,2
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   and   r1,rx,2
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   and   r1,rx,#-2147483648
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   and   r1,rx,#-2147483648
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   and   r1,rx,#-2147483648
+   shrs  r2,r1,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x & 0x80000000) >>s 31) + x) ^ ((x & 0x80000000) >>s 31))
+
+Found a 4-operation program:
+   and   r1,rx,#-2147483648
+   shrs  r2,r1,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x & 0x80000000) >>s 31) ^ x) - ((x & 0x80000000) >>s 31))
+
+Found a 4-operation program:
+   and   r1,rx,rx
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   and   r1,rx,rx
+   shrs  r2,rx,#31
+   add   r3,r2,r1
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + (x & x)) ^ (x >>s 31))
+
+Found a 4-operation program:
+   and   r1,rx,rx
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   and   r1,rx,rx
+   shrs  r2,rx,#31
+   xor   r3,r2,r1
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ (x & x)) - (x >>s 31))
+
+Found a 4-operation program:
+   and   r1,rx,rx
+   shrs  r2,r1,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x & x) >>s 31) + x) ^ ((x & x) >>s 31))
+
+Found a 4-operation program:
+   and   r1,rx,rx
+   shrs  r2,r1,#31
+   add   r3,r2,r1
+   xor   r4,r3,r2
+   Expr: ((((x & x) >>s 31) + (x & x)) ^ ((x & x) >>s 31))
+
+Found a 4-operation program:
+   and   r1,rx,rx
+   shrs  r2,r1,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x & x) >>s 31) ^ x) - ((x & x) >>s 31))
+
+Found a 4-operation program:
+   and   r1,rx,rx
+   shrs  r2,r1,#31
+   xor   r3,r2,r1
+   sub   r4,r3,r2
+   Expr: ((((x & x) >>s 31) ^ (x & x)) - ((x & x) >>s 31))
+
+Found a 4-operation program:
+   or    r1,rx,1
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   or    r1,rx,1
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   or    r1,rx,1
+   shrs  r2,r1,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x | 1) >>s 31) + x) ^ ((x | 1) >>s 31))
+
+Found a 4-operation program:
+   or    r1,rx,1
+   shrs  r2,r1,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x | 1) >>s 31) ^ x) - ((x | 1) >>s 31))
+
+Found a 4-operation program:
+   or    r1,rx,-2
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   or    r1,rx,-2
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   or    r1,rx,-2
+   shrs  r2,rx,r1
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s (x | -2)) + x) ^ (x >>s (x | -2)))
+
+Found a 4-operation program:
+   or    r1,rx,-2
+   shrs  r2,rx,r1
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s (x | -2)) ^ x) - (x >>s (x | -2)))
+
+Found a 4-operation program:
+   or    r1,rx,2
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   or    r1,rx,2
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   or    r1,rx,2
+   shrs  r2,r1,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x | 2) >>s 31) + x) ^ ((x | 2) >>s 31))
+
+Found a 4-operation program:
+   or    r1,rx,2
+   shrs  r2,r1,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x | 2) >>s 31) ^ x) - ((x | 2) >>s 31))
+
+Found a 4-operation program:
+   or    r1,rx,#-2147483648
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   or    r1,rx,#-2147483648
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   or    r1,rx,rx
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   or    r1,rx,rx
+   shrs  r2,rx,#31
+   add   r3,r2,r1
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + (x | x)) ^ (x >>s 31))
+
+Found a 4-operation program:
+   or    r1,rx,rx
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   or    r1,rx,rx
+   shrs  r2,rx,#31
+   xor   r3,r2,r1
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ (x | x)) - (x >>s 31))
+
+Found a 4-operation program:
+   or    r1,rx,rx
+   shrs  r2,r1,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x | x) >>s 31) + x) ^ ((x | x) >>s 31))
+
+Found a 4-operation program:
+   or    r1,rx,rx
+   shrs  r2,r1,#31
+   add   r3,r2,r1
+   xor   r4,r3,r2
+   Expr: ((((x | x) >>s 31) + (x | x)) ^ ((x | x) >>s 31))
+
+Found a 4-operation program:
+   or    r1,rx,rx
+   shrs  r2,r1,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x | x) >>s 31) ^ x) - ((x | x) >>s 31))
+
+Found a 4-operation program:
+   or    r1,rx,rx
+   shrs  r2,r1,#31
+   xor   r3,r2,r1
+   sub   r4,r3,r2
+   Expr: ((((x | x) >>s 31) ^ (x | x)) - ((x | x) >>s 31))
+
+Found a 4-operation program:
+   xor   r1,rx,1
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   xor   r1,rx,1
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   xor   r1,rx,1
+   shrs  r2,r1,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x ^ 1) >>s 31) + x) ^ ((x ^ 1) >>s 31))
+
+Found a 4-operation program:
+   xor   r1,rx,1
+   shrs  r2,r1,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x ^ 1) >>s 31) ^ x) - ((x ^ 1) >>s 31))
+
+Found a 4-operation program:
+   xor   r1,rx,-2
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   xor   r1,rx,-2
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   xor   r1,rx,-2
+   shrs  r2,r1,#31
+   sub   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x ^ -2) >>s 31) - x) ^ ((x ^ -2) >>s 31))
+
+Found a 4-operation program:
+   xor   r1,rx,-2
+   shrs  r2,r1,#31
+   xor   r3,r2,rx
+   sub   r4,r2,r3
+   Expr: (((x ^ -2) >>s 31) - (((x ^ -2) >>s 31) ^ x))
+
+Found a 4-operation program:
+   xor   r1,rx,2
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   xor   r1,rx,2
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   xor   r1,rx,2
+   shrs  r2,r1,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x ^ 2) >>s 31) + x) ^ ((x ^ 2) >>s 31))
+
+Found a 4-operation program:
+   xor   r1,rx,2
+   shrs  r2,r1,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x ^ 2) >>s 31) ^ x) - ((x ^ 2) >>s 31))
+
+Found a 4-operation program:
+   xor   r1,rx,#-2147483648
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   xor   r1,rx,#-2147483648
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   xor   r1,rx,#-2147483648
+   shrs  r2,r1,#31
+   sub   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x ^ 0x80000000) >>s 31) - x) ^ ((x ^ 0x80000000) >>s 31))
+
+Found a 4-operation program:
+   xor   r1,rx,#-2147483648
+   shrs  r2,r1,#31
+   xor   r3,r2,rx
+   sub   r4,r2,r3
+   Expr: (((x ^ 0x80000000) >>s 31) - (((x ^ 0x80000000) >>s 31) ^ x))
+
+Found a 4-operation program:
+   xor   r1,rx,rx
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   xor   r1,rx,rx
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   bic   r1,rx,1
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   bic   r1,rx,1
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   bic   r1,rx,1
+   shrs  r2,r1,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x & ~1) >>s 31) + x) ^ ((x & ~1) >>s 31))
+
+Found a 4-operation program:
+   bic   r1,rx,1
+   shrs  r2,r1,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x & ~1) >>s 31) ^ x) - ((x & ~1) >>s 31))
+
+Found a 4-operation program:
+   bic   r1,rx,-2
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   bic   r1,rx,-2
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   bic   r1,rx,2
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   bic   r1,rx,2
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   bic   r1,rx,2
+   shrs  r2,r1,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x & ~2) >>s 31) + x) ^ ((x & ~2) >>s 31))
+
+Found a 4-operation program:
+   bic   r1,rx,2
+   shrs  r2,r1,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x & ~2) >>s 31) ^ x) - ((x & ~2) >>s 31))
+
+Found a 4-operation program:
+   bic   r1,rx,#-2147483648
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   bic   r1,rx,#-2147483648
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   bic   r1,rx,rx
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   bic   r1,rx,rx
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shl   r1,rx,#1
+   shrs  r2,rx,#30
+   and   r3,r2,r1
+   sub   r4,rx,r3
+   Expr: (x - ((x >>s 30) & (x << 1)))
+
+Found a 4-operation program:
+   shl   r1,rx,#1
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shl   r1,rx,#1
+   shrs  r2,rx,#31
+   and   r3,r2,r1
+   sub   r4,rx,r3
+   Expr: (x - ((x >>s 31) & (x << 1)))
+
+Found a 4-operation program:
+   shl   r1,rx,#1
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shl   r1,rx,#1
+   shrs  r2,rx,#31
+   shl   r3,r1,r2
+   sub   r4,r3,rx
+   Expr: (((x << 1) << (x >>s 31)) - x)
+
+Found a 4-operation program:
+   shl   r1,rx,#2
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shl   r1,rx,#2
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shl   r1,rx,#3
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shl   r1,rx,#3
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shl   r1,rx,#30
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shl   r1,rx,#30
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shl   r1,rx,#31
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shl   r1,rx,#31
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shl   r1,-1,rx
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shl   r1,-1,rx
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shl   r1,1,rx
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shl   r1,1,rx
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shl   r1,-2,rx
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shl   r1,-2,rx
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shl   r1,2,rx
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shl   r1,2,rx
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shl   r1,#-2147483648,rx
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shl   r1,#-2147483648,rx
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shl   r1,rx,rx
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shl   r1,rx,rx
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shr   r1,rx,#1
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shr   r1,rx,#1
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shr   r1,rx,#2
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shr   r1,rx,#2
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shr   r1,rx,#3
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shr   r1,rx,#3
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shr   r1,rx,#30
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shr   r1,rx,#30
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shr   r1,rx,#31
+   neg   r2,r1
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((-((x >>u 31)) + x) ^ -((x >>u 31)))
+
+Found a 4-operation program:
+   shr   r1,rx,#31
+   neg   r2,r1
+   sub   r3,rx,r1
+   xor   r4,r3,r2
+   Expr: ((x - (x >>u 31)) ^ -((x >>u 31)))
+
+Found a 4-operation program:
+   shr   r1,rx,#31
+   neg   r2,r1
+   xor   r3,r2,rx
+   add   r4,r3,r1
+   Expr: ((-((x >>u 31)) ^ x) + (x >>u 31))
+
+Found a 4-operation program:
+   shr   r1,rx,#31
+   neg   r2,r1
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((-((x >>u 31)) ^ x) - -((x >>u 31)))
+
+Found a 4-operation program:
+   shr   r1,rx,#31
+   sub   r2,r1,1
+   sub   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>u 31) - 1) - x) ^ ((x >>u 31) - 1))
+
+Found a 4-operation program:
+   shr   r1,rx,#31
+   sub   r2,r1,1
+   xor   r3,r2,rx
+   sub   r4,r2,r3
+   Expr: (((x >>u 31) - 1) - (((x >>u 31) - 1) ^ x))
+
+Found a 4-operation program:
+   shr   r1,rx,#31
+   sub   r2,#-2147483648,r1
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((0x80000000 - (x >>u 31)) + x) ^ (0x80000000 - (x >>u 31)))
+
+Found a 4-operation program:
+   shr   r1,rx,#31
+   sub   r2,#-2147483648,r1
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((0x80000000 - (x >>u 31)) ^ x) - (0x80000000 - (x >>u 31)))
+
+Found a 4-operation program:
+   shr   r1,rx,#31
+   sub   r2,rx,r1
+   neg   r3,r1
+   xor   r4,r3,r2
+   Expr: (-((x >>u 31)) ^ (x - (x >>u 31)))
+
+Found a 4-operation program:
+   shr   r1,rx,#31
+   sub   r2,rx,r1
+   sub   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x - (x >>u 31)) - x) ^ (x - (x >>u 31)))
+
+Found a 4-operation program:
+   shr   r1,rx,#31
+   sub   r2,rx,r1
+   shrs  r3,rx,#31
+   xor   r4,r3,r2
+   Expr: ((x >>s 31) ^ (x - (x >>u 31)))
+
+Found a 4-operation program:
+   shr   r1,rx,#31
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shr   r1,rx,#31
+   shrs  r2,rx,#31
+   sub   r3,rx,r1
+   xor   r4,r3,r2
+   Expr: ((x - (x >>u 31)) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shr   r1,rx,#31
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   add   r4,r3,r1
+   Expr: (((x >>s 31) ^ x) + (x >>u 31))
+
+Found a 4-operation program:
+   shr   r1,rx,#31
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shr   r1,-1,rx
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shr   r1,-1,rx
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shr   r1,1,rx
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shr   r1,1,rx
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shr   r1,-2,rx
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shr   r1,-2,rx
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shr   r1,2,rx
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shr   r1,2,rx
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shr   r1,#-2147483648,rx
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shr   r1,#-2147483648,rx
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shr   r1,rx,rx
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shr   r1,rx,rx
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#1
+   shrs  r2,r1,#30
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s 1) >>s 30) + x) ^ ((x >>s 1) >>s 30))
+
+Found a 4-operation program:
+   shrs  r1,rx,#1
+   shrs  r2,r1,#30
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s 1) >>s 30) ^ x) - ((x >>s 1) >>s 30))
+
+Found a 4-operation program:
+   shrs  r1,rx,#1
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#1
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#1
+   shrs  r2,r1,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s 1) >>s 31) + x) ^ ((x >>s 1) >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#1
+   shrs  r2,r1,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s 1) >>s 31) ^ x) - ((x >>s 1) >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#2
+   shrs  r2,r1,#30
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s 2) >>s 30) + x) ^ ((x >>s 2) >>s 30))
+
+Found a 4-operation program:
+   shrs  r1,rx,#2
+   shrs  r2,r1,#30
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s 2) >>s 30) ^ x) - ((x >>s 2) >>s 30))
+
+Found a 4-operation program:
+   shrs  r1,rx,#2
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#2
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#2
+   shrs  r2,r1,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s 2) >>s 31) + x) ^ ((x >>s 2) >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#2
+   shrs  r2,r1,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s 2) >>s 31) ^ x) - ((x >>s 2) >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#3
+   shrs  r2,r1,#30
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s 3) >>s 30) + x) ^ ((x >>s 3) >>s 30))
+
+Found a 4-operation program:
+   shrs  r1,rx,#3
+   shrs  r2,r1,#30
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s 3) >>s 30) ^ x) - ((x >>s 3) >>s 30))
+
+Found a 4-operation program:
+   shrs  r1,rx,#3
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#3
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#3
+   shrs  r2,r1,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s 3) >>s 31) + x) ^ ((x >>s 3) >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#3
+   shrs  r2,r1,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s 3) >>s 31) ^ x) - ((x >>s 3) >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#30
+   add   r2,rx,rx
+   and   r3,r2,r1
+   sub   r4,rx,r3
+   Expr: (x - ((x + x) & (x >>s 30)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#30
+   add   r2,rx,rx
+   bic   r3,r2,r1
+   sub   r4,r3,rx
+   Expr: (((x + x) & ~(x >>s 30)) - x)
+
+Found a 4-operation program:
+   shrs  r1,rx,#30
+   shl   r2,rx,#1
+   and   r3,r2,r1
+   sub   r4,rx,r3
+   Expr: (x - ((x << 1) & (x >>s 30)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#30
+   shl   r2,rx,#1
+   bic   r3,r2,r1
+   sub   r4,r3,rx
+   Expr: (((x << 1) & ~(x >>s 30)) - x)
+
+Found a 4-operation program:
+   shrs  r1,rx,#30
+   shr   r2,r1,#1
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s 30) >>u 1) + x) ^ ((x >>s 30) >>u 1))
+
+Found a 4-operation program:
+   shrs  r1,rx,#30
+   shr   r2,r1,#1
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s 30) >>u 1) ^ x) - ((x >>s 30) >>u 1))
+
+Found a 4-operation program:
+   shrs  r1,rx,#30
+   shrs  r2,r1,#1
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s 30) >>s 1) + x) ^ ((x >>s 30) >>s 1))
+
+Found a 4-operation program:
+   shrs  r1,rx,#30
+   shrs  r2,r1,#1
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s 30) >>s 1) ^ x) - ((x >>s 30) >>s 1))
+
+Found a 4-operation program:
+   shrs  r1,rx,#30
+   shrs  r2,r1,#2
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s 30) >>s 2) + x) ^ ((x >>s 30) >>s 2))
+
+Found a 4-operation program:
+   shrs  r1,rx,#30
+   shrs  r2,r1,#2
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s 30) >>s 2) ^ x) - ((x >>s 30) >>s 2))
+
+Found a 4-operation program:
+   shrs  r1,rx,#30
+   shrs  r2,r1,#3
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s 30) >>s 3) + x) ^ ((x >>s 30) >>s 3))
+
+Found a 4-operation program:
+   shrs  r1,rx,#30
+   shrs  r2,r1,#3
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s 30) >>s 3) ^ x) - ((x >>s 30) >>s 3))
+
+Found a 4-operation program:
+   shrs  r1,rx,#30
+   shrs  r2,r1,#30
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s 30) >>s 30) + x) ^ ((x >>s 30) >>s 30))
+
+Found a 4-operation program:
+   shrs  r1,rx,#30
+   shrs  r2,r1,#30
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s 30) >>s 30) ^ x) - ((x >>s 30) >>s 30))
+
+Found a 4-operation program:
+   shrs  r1,rx,#30
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#30
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#30
+   shrs  r2,r1,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s 30) >>s 31) + x) ^ ((x >>s 30) >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#30
+   shrs  r2,r1,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s 30) >>s 31) ^ x) - ((x >>s 30) >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#30
+   shrs  r2,r1,rx
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s 30) >>s x) + x) ^ ((x >>s 30) >>s x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#30
+   shrs  r2,r1,rx
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s 30) >>s x) ^ x) - ((x >>s 30) >>s x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#30
+   shrs  r2,r1,r1
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s 30) >>s (x >>s 30)) + x) ^ ((x >>s 30) >>s (x >>s 30)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#30
+   shrs  r2,r1,r1
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s 30) >>s (x >>s 30)) ^ x) - ((x >>s 30) >>s (x >>s 30)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   neg   r2,rx
+   sub   r3,r1,r2
+   xor   r4,r3,r1
+   Expr: (((x >>s 31) - -(x)) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   neg   r2,rx
+   xor   r3,r2,r1
+   sub   r4,r1,r3
+   Expr: ((x >>s 31) - (-(x) ^ (x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   neg   r2,r1
+   sub   r3,rx,r2
+   xor   r4,r3,r1
+   Expr: ((x - -((x >>s 31))) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   neg   r2,r1
+   xor   r3,r1,rx
+   add   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) + -((x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   add   r2,r1,#-2147483648
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s 31) + 0x80000000) + x) ^ ((x >>s 31) + 0x80000000))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   add   r2,r1,#-2147483648
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s 31) + 0x80000000) ^ x) - ((x >>s 31) + 0x80000000))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   add   r2,rx,rx
+   and   r3,r2,r1
+   sub   r4,rx,r3
+   Expr: (x - ((x + x) & (x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   add   r2,rx,rx
+   bic   r3,r2,r1
+   sub   r4,r3,rx
+   Expr: (((x + x) & ~(x >>s 31)) - x)
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   add   r2,rx,rx
+   shl   r3,r2,r1
+   sub   r4,r3,rx
+   Expr: (((x + x) << (x >>s 31)) - x)
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   add   r2,r1,rx
+   sub   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s 31) + x) - x) ^ ((x >>s 31) + x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   add   r2,r1,rx
+   and   r3,r1,r1
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) & (x >>s 31)) ^ ((x >>s 31) + x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   add   r2,r1,rx
+   and   r3,r2,r2
+   xor   r4,r3,r1
+   Expr: ((((x >>s 31) + x) & ((x >>s 31) + x)) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   add   r2,r1,rx
+   or    r3,r1,r1
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) | (x >>s 31)) ^ ((x >>s 31) + x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   add   r2,r1,rx
+   or    r3,r2,r2
+   xor   r4,r3,r1
+   Expr: ((((x >>s 31) + x) | ((x >>s 31) + x)) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   add   r2,r1,rx
+   xor   r3,r2,r1
+   and   r4,r3,r3
+   Expr: ((((x >>s 31) + x) ^ (x >>s 31)) & (((x >>s 31) + x) ^ (x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   add   r2,r1,rx
+   xor   r3,r2,r1
+   or    r4,r3,r3
+   Expr: ((((x >>s 31) + x) ^ (x >>s 31)) | (((x >>s 31) + x) ^ (x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   add   r2,r1,rx
+   shrs  r3,r1,#1
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) >>s 1) ^ ((x >>s 31) + x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   add   r2,r1,rx
+   shrs  r3,r1,#2
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) >>s 2) ^ ((x >>s 31) + x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   add   r2,r1,rx
+   shrs  r3,r1,#3
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) >>s 3) ^ ((x >>s 31) + x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   add   r2,r1,rx
+   shrs  r3,r1,#30
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) >>s 30) ^ ((x >>s 31) + x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   add   r2,r1,rx
+   shrs  r3,rx,#31
+   xor   r4,r3,r2
+   Expr: ((x >>s 31) ^ ((x >>s 31) + x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   add   r2,r1,rx
+   shrs  r3,r1,#31
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) >>s 31) ^ ((x >>s 31) + x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   add   r2,r1,rx
+   shrs  r3,r1,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) >>s x) ^ ((x >>s 31) + x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   add   r2,r1,rx
+   shrs  r3,r1,r1
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) >>s (x >>s 31)) ^ ((x >>s 31) + x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   add   r2,r1,rx
+   shrs  r3,r1,r2
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) >>s ((x >>s 31) + x)) ^ ((x >>s 31) + x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   add   r2,r1,rx
+   revb  r3,r1
+   xor   r4,r3,r2
+   Expr: (revb((x >>s 31)) ^ ((x >>s 31) + x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   sub   r2,r1,#-2147483648
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s 31) - 0x80000000) + x) ^ ((x >>s 31) - 0x80000000))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   sub   r2,r1,#-2147483648
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s 31) - 0x80000000) ^ x) - ((x >>s 31) - 0x80000000))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   sub   r2,r1,rx
+   xor   r3,r2,r1
+   neg   r4,r3
+   Expr: -((((x >>s 31) - x) ^ (x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   and   r2,r1,1
+   sub   r3,rx,r2
+   xor   r4,r3,r1
+   Expr: ((x - ((x >>s 31) & 1)) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   and   r2,r1,1
+   xor   r3,r1,rx
+   add   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) + ((x >>s 31) & 1))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   and   r2,rx,rx
+   add   r3,r2,r1
+   xor   r4,r3,r1
+   Expr: (((x & x) + (x >>s 31)) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   and   r2,rx,rx
+   xor   r3,r2,r1
+   sub   r4,r3,r1
+   Expr: (((x & x) ^ (x >>s 31)) - (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   and   r2,r1,rx
+   add   r3,r2,r2
+   sub   r4,rx,r3
+   Expr: (x - (((x >>s 31) & x) + ((x >>s 31) & x)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   and   r2,r1,rx
+   sub   r3,rx,r2
+   sub   r4,r3,r2
+   Expr: ((x - ((x >>s 31) & x)) - ((x >>s 31) & x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   and   r2,r1,rx
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s 31) & x) ^ x) - ((x >>s 31) & x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   and   r2,r1,rx
+   shl   r3,r2,#1
+   sub   r4,rx,r3
+   Expr: (x - (((x >>s 31) & x) << 1))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   and   r2,r1,r1
+   add   r3,r1,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ ((x >>s 31) & (x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   and   r2,r1,r1
+   add   r3,r2,rx
+   xor   r4,r3,r1
+   Expr: ((((x >>s 31) & (x >>s 31)) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   and   r2,r1,r1
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s 31) & (x >>s 31)) + x) ^ ((x >>s 31) & (x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   and   r2,r1,r1
+   xor   r3,r1,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - ((x >>s 31) & (x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   and   r2,r1,r1
+   xor   r3,r2,rx
+   sub   r4,r3,r1
+   Expr: ((((x >>s 31) & (x >>s 31)) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   and   r2,r1,r1
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s 31) & (x >>s 31)) ^ x) - ((x >>s 31) & (x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   or    r2,r1,#-2147483648
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s 31) | 0x80000000) + x) ^ ((x >>s 31) | 0x80000000))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   or    r2,r1,#-2147483648
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s 31) | 0x80000000) ^ x) - ((x >>s 31) | 0x80000000))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   or    r2,rx,rx
+   add   r3,r2,r1
+   xor   r4,r3,r1
+   Expr: (((x | x) + (x >>s 31)) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   or    r2,rx,rx
+   xor   r3,r2,r1
+   sub   r4,r3,r1
+   Expr: (((x | x) ^ (x >>s 31)) - (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   or    r2,r1,r1
+   add   r3,r1,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ ((x >>s 31) | (x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   or    r2,r1,r1
+   add   r3,r2,rx
+   xor   r4,r3,r1
+   Expr: ((((x >>s 31) | (x >>s 31)) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   or    r2,r1,r1
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s 31) | (x >>s 31)) + x) ^ ((x >>s 31) | (x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   or    r2,r1,r1
+   xor   r3,r1,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - ((x >>s 31) | (x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   or    r2,r1,r1
+   xor   r3,r2,rx
+   sub   r4,r3,r1
+   Expr: ((((x >>s 31) | (x >>s 31)) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   or    r2,r1,r1
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s 31) | (x >>s 31)) ^ x) - ((x >>s 31) | (x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   xor   r2,r1,#-2147483648
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s 31) ^ 0x80000000) + x) ^ ((x >>s 31) ^ 0x80000000))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   xor   r2,r1,#-2147483648
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s 31) ^ 0x80000000) ^ x) - ((x >>s 31) ^ 0x80000000))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   xor   r2,r1,rx
+   neg   r3,r1
+   add   r4,r3,r2
+   Expr: (-((x >>s 31)) + ((x >>s 31) ^ x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   xor   r2,r1,rx
+   sub   r3,r2,r1
+   and   r4,r3,r3
+   Expr: ((((x >>s 31) ^ x) - (x >>s 31)) & (((x >>s 31) ^ x) - (x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   xor   r2,r1,rx
+   sub   r3,r2,r1
+   or    r4,r3,r3
+   Expr: ((((x >>s 31) ^ x) - (x >>s 31)) | (((x >>s 31) ^ x) - (x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   xor   r2,r1,rx
+   sub   r3,r1,r2
+   neg   r4,r3
+   Expr: -(((x >>s 31) - ((x >>s 31) ^ x)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   xor   r2,r1,rx
+   and   r3,r1,1
+   add   r4,r3,r2
+   Expr: (((x >>s 31) & 1) + ((x >>s 31) ^ x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   xor   r2,r1,rx
+   and   r3,r1,r1
+   sub   r4,r2,r3
+   Expr: (((x >>s 31) ^ x) - ((x >>s 31) & (x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   xor   r2,r1,rx
+   and   r3,r2,r2
+   sub   r4,r3,r1
+   Expr: ((((x >>s 31) ^ x) & ((x >>s 31) ^ x)) - (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   xor   r2,r1,rx
+   or    r3,r1,r1
+   sub   r4,r2,r3
+   Expr: (((x >>s 31) ^ x) - ((x >>s 31) | (x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   xor   r2,r1,rx
+   or    r3,r2,r2
+   sub   r4,r3,r1
+   Expr: ((((x >>s 31) ^ x) | ((x >>s 31) ^ x)) - (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   xor   r2,r1,rx
+   xor   r3,r2,rx
+   sub   r4,r2,r3
+   Expr: (((x >>s 31) ^ x) - (((x >>s 31) ^ x) ^ x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   xor   r2,r1,rx
+   bic   r3,r1,-2
+   add   r4,r3,r2
+   Expr: (((x >>s 31) & ~-2) + ((x >>s 31) ^ x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   xor   r2,r1,rx
+   bic   r3,r2,#-2147483648
+   sub   r4,r3,r1
+   Expr: ((((x >>s 31) ^ x) & ~0x80000000) - (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   xor   r2,r1,rx
+   shr   r3,rx,#31
+   add   r4,r3,r2
+   Expr: ((x >>u 31) + ((x >>s 31) ^ x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   xor   r2,r1,rx
+   shr   r3,r1,#31
+   add   r4,r3,r2
+   Expr: (((x >>s 31) >>u 31) + ((x >>s 31) ^ x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   xor   r2,r1,rx
+   shr   r3,r1,r1
+   add   r4,r3,r2
+   Expr: (((x >>s 31) >>u (x >>s 31)) + ((x >>s 31) ^ x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   xor   r2,r1,rx
+   shrs  r3,r1,#1
+   sub   r4,r2,r3
+   Expr: (((x >>s 31) ^ x) - ((x >>s 31) >>s 1))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   xor   r2,r1,rx
+   shrs  r3,r1,#2
+   sub   r4,r2,r3
+   Expr: (((x >>s 31) ^ x) - ((x >>s 31) >>s 2))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   xor   r2,r1,rx
+   shrs  r3,r1,#3
+   sub   r4,r2,r3
+   Expr: (((x >>s 31) ^ x) - ((x >>s 31) >>s 3))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   xor   r2,r1,rx
+   shrs  r3,r1,#30
+   sub   r4,r2,r3
+   Expr: (((x >>s 31) ^ x) - ((x >>s 31) >>s 30))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   xor   r2,r1,rx
+   shrs  r3,rx,#31
+   sub   r4,r2,r3
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   xor   r2,r1,rx
+   shrs  r3,r1,#31
+   sub   r4,r2,r3
+   Expr: (((x >>s 31) ^ x) - ((x >>s 31) >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   xor   r2,r1,rx
+   shrs  r3,r1,rx
+   sub   r4,r2,r3
+   Expr: (((x >>s 31) ^ x) - ((x >>s 31) >>s x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   xor   r2,r1,rx
+   shrs  r3,r1,r1
+   sub   r4,r2,r3
+   Expr: (((x >>s 31) ^ x) - ((x >>s 31) >>s (x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   xor   r2,r1,rx
+   shrs  r3,r1,r2
+   sub   r4,r2,r3
+   Expr: (((x >>s 31) ^ x) - ((x >>s 31) >>s ((x >>s 31) ^ x)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   xor   r2,r1,rx
+   revb  r3,r1
+   sub   r4,r2,r3
+   Expr: (((x >>s 31) ^ x) - revb((x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   bic   r2,r1,-2
+   sub   r3,rx,r2
+   xor   r4,r3,r1
+   Expr: ((x - ((x >>s 31) & ~-2)) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   bic   r2,r1,-2
+   xor   r3,r1,rx
+   add   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) + ((x >>s 31) & ~-2))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   bic   r2,r1,#-2147483648
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s 31) & ~0x80000000) + x) ^ ((x >>s 31) & ~0x80000000))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   bic   r2,r1,#-2147483648
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s 31) & ~0x80000000) ^ x) - ((x >>s 31) & ~0x80000000))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   bic   r2,r1,rx
+   shr   r3,rx,r1
+   add   r4,r3,r2
+   Expr: ((x >>u (x >>s 31)) + ((x >>s 31) & ~x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shl   r2,rx,#1
+   and   r3,r2,r1
+   sub   r4,rx,r3
+   Expr: (x - ((x << 1) & (x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shl   r2,rx,#1
+   bic   r3,r2,r1
+   sub   r4,r3,rx
+   Expr: (((x << 1) & ~(x >>s 31)) - x)
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shl   r2,rx,#1
+   shl   r3,r2,r1
+   sub   r4,r3,rx
+   Expr: (((x << 1) << (x >>s 31)) - x)
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shl   r2,-1,r1
+   sub   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((-1 << (x >>s 31)) - x) ^ (-1 << (x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shl   r2,-1,r1
+   xor   r3,r2,rx
+   sub   r4,r2,r3
+   Expr: ((-1 << (x >>s 31)) - ((-1 << (x >>s 31)) ^ x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shl   r2,rx,r1
+   add   r3,r2,r2
+   sub   r4,r3,rx
+   Expr: (((x << (x >>s 31)) + (x << (x >>s 31))) - x)
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shl   r2,rx,r1
+   sub   r3,r2,rx
+   add   r4,r3,r2
+   Expr: (((x << (x >>s 31)) - x) + (x << (x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shl   r2,rx,r1
+   sub   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x << (x >>s 31)) - x) ^ (x << (x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shl   r2,rx,r1
+   sub   r3,rx,r2
+   sub   r4,r2,r3
+   Expr: ((x << (x >>s 31)) - (x - (x << (x >>s 31))))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shl   r2,rx,r1
+   xor   r3,r2,rx
+   sub   r4,r2,r3
+   Expr: ((x << (x >>s 31)) - ((x << (x >>s 31)) ^ x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shl   r2,rx,r1
+   shl   r3,r2,#1
+   sub   r4,r3,rx
+   Expr: (((x << (x >>s 31)) << 1) - x)
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shr   r2,r1,#1
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s 31) >>u 1) + x) ^ ((x >>s 31) >>u 1))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shr   r2,r1,#1
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s 31) >>u 1) ^ x) - ((x >>s 31) >>u 1))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shr   r2,rx,#31
+   sub   r3,rx,r2
+   xor   r4,r3,r1
+   Expr: ((x - (x >>u 31)) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shr   r2,rx,#31
+   xor   r3,r1,rx
+   add   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) + (x >>u 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shr   r2,r1,#31
+   sub   r3,rx,r2
+   xor   r4,r3,r1
+   Expr: ((x - ((x >>s 31) >>u 31)) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shr   r2,r1,#31
+   xor   r3,r1,rx
+   add   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) + ((x >>s 31) >>u 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shr   r2,rx,r1
+   bic   r3,r1,rx
+   add   r4,r3,r2
+   Expr: (((x >>s 31) & ~x) + (x >>u (x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shr   r2,r1,r1
+   sub   r3,rx,r2
+   xor   r4,r3,r1
+   Expr: ((x - ((x >>s 31) >>u (x >>s 31))) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shr   r2,r1,r1
+   xor   r3,r1,rx
+   add   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) + ((x >>s 31) >>u (x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,#1
+   add   r3,r1,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ ((x >>s 31) >>s 1))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,#1
+   add   r3,r2,rx
+   xor   r4,r3,r1
+   Expr: ((((x >>s 31) >>s 1) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,#1
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s 31) >>s 1) + x) ^ ((x >>s 31) >>s 1))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,#1
+   xor   r3,r1,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - ((x >>s 31) >>s 1))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,#1
+   xor   r3,r2,rx
+   sub   r4,r3,r1
+   Expr: ((((x >>s 31) >>s 1) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,#1
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s 31) >>s 1) ^ x) - ((x >>s 31) >>s 1))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,#2
+   add   r3,r1,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ ((x >>s 31) >>s 2))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,#2
+   add   r3,r2,rx
+   xor   r4,r3,r1
+   Expr: ((((x >>s 31) >>s 2) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,#2
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s 31) >>s 2) + x) ^ ((x >>s 31) >>s 2))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,#2
+   xor   r3,r1,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - ((x >>s 31) >>s 2))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,#2
+   xor   r3,r2,rx
+   sub   r4,r3,r1
+   Expr: ((((x >>s 31) >>s 2) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,#2
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s 31) >>s 2) ^ x) - ((x >>s 31) >>s 2))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,#3
+   add   r3,r1,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ ((x >>s 31) >>s 3))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,#3
+   add   r3,r2,rx
+   xor   r4,r3,r1
+   Expr: ((((x >>s 31) >>s 3) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,#3
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s 31) >>s 3) + x) ^ ((x >>s 31) >>s 3))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,#3
+   xor   r3,r1,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - ((x >>s 31) >>s 3))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,#3
+   xor   r3,r2,rx
+   sub   r4,r3,r1
+   Expr: ((((x >>s 31) >>s 3) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,#3
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s 31) >>s 3) ^ x) - ((x >>s 31) >>s 3))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,#30
+   add   r3,r1,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ ((x >>s 31) >>s 30))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,#30
+   add   r3,r2,rx
+   xor   r4,r3,r1
+   Expr: ((((x >>s 31) >>s 30) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,#30
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s 31) >>s 30) + x) ^ ((x >>s 31) >>s 30))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,#30
+   xor   r3,r1,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - ((x >>s 31) >>s 30))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,#30
+   xor   r3,r2,rx
+   sub   r4,r3,r1
+   Expr: ((((x >>s 31) >>s 30) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,#30
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s 31) >>s 30) ^ x) - ((x >>s 31) >>s 30))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,rx,#31
+   add   r3,r1,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r1
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,rx,#31
+   xor   r3,r1,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r1
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,#31
+   add   r3,r1,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ ((x >>s 31) >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,#31
+   add   r3,r2,rx
+   xor   r4,r3,r1
+   Expr: ((((x >>s 31) >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s 31) >>s 31) + x) ^ ((x >>s 31) >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,#31
+   xor   r3,r1,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - ((x >>s 31) >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r1
+   Expr: ((((x >>s 31) >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s 31) >>s 31) ^ x) - ((x >>s 31) >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,rx
+   add   r3,r1,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ ((x >>s 31) >>s x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,rx
+   add   r3,r2,rx
+   xor   r4,r3,r1
+   Expr: ((((x >>s 31) >>s x) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,rx
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s 31) >>s x) + x) ^ ((x >>s 31) >>s x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,rx
+   xor   r3,r1,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - ((x >>s 31) >>s x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,rx
+   xor   r3,r2,rx
+   sub   r4,r3,r1
+   Expr: ((((x >>s 31) >>s x) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,rx
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s 31) >>s x) ^ x) - ((x >>s 31) >>s x))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,#-2147483648,r1
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((0x80000000 >>s (x >>s 31)) + x) ^ (0x80000000 >>s (x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,#-2147483648,r1
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((0x80000000 >>s (x >>s 31)) ^ x) - (0x80000000 >>s (x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,r1
+   add   r3,r1,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ ((x >>s 31) >>s (x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,r1
+   add   r3,r2,rx
+   xor   r4,r3,r1
+   Expr: ((((x >>s 31) >>s (x >>s 31)) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,r1
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s 31) >>s (x >>s 31)) + x) ^ ((x >>s 31) >>s (x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,r1
+   xor   r3,r1,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - ((x >>s 31) >>s (x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,r1
+   xor   r3,r2,rx
+   sub   r4,r3,r1
+   Expr: ((((x >>s 31) >>s (x >>s 31)) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   shrs  r2,r1,r1
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s 31) >>s (x >>s 31)) ^ x) - ((x >>s 31) >>s (x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   revb  r2,r1
+   add   r3,r1,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ revb((x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   revb  r2,r1
+   add   r3,r2,rx
+   xor   r4,r3,r1
+   Expr: ((revb((x >>s 31)) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   revb  r2,r1
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((revb((x >>s 31)) + x) ^ revb((x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   revb  r2,r1
+   xor   r3,r1,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - revb((x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   revb  r2,r1
+   xor   r3,r2,rx
+   sub   r4,r3,r1
+   Expr: ((revb((x >>s 31)) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,#31
+   revb  r2,r1
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((revb((x >>s 31)) ^ x) - revb((x >>s 31)))
+
+Found a 4-operation program:
+   shrs  r1,-2,rx
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,-2,rx
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,-2,rx
+   shrs  r2,rx,r1
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s (-2 >>s x)) + x) ^ (x >>s (-2 >>s x)))
+
+Found a 4-operation program:
+   shrs  r1,-2,rx
+   shrs  r2,rx,r1
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s (-2 >>s x)) ^ x) - (x >>s (-2 >>s x)))
+
+Found a 4-operation program:
+   shrs  r1,2,rx
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,2,rx
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,#-2147483648,rx
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,#-2147483648,rx
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,rx
+   shrs  r2,r1,#30
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s x) >>s 30) + x) ^ ((x >>s x) >>s 30))
+
+Found a 4-operation program:
+   shrs  r1,rx,rx
+   shrs  r2,r1,#30
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s x) >>s 30) ^ x) - ((x >>s x) >>s 30))
+
+Found a 4-operation program:
+   shrs  r1,rx,rx
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,rx
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,rx
+   shrs  r2,r1,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: ((((x >>s x) >>s 31) + x) ^ ((x >>s x) >>s 31))
+
+Found a 4-operation program:
+   shrs  r1,rx,rx
+   shrs  r2,r1,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: ((((x >>s x) >>s 31) ^ x) - ((x >>s x) >>s 31))
+
+Found a 4-operation program:
+   revb  r1,rx
+   shrs  r2,rx,#31
+   add   r3,r2,rx
+   xor   r4,r3,r2
+   Expr: (((x >>s 31) + x) ^ (x >>s 31))
+
+Found a 4-operation program:
+   revb  r1,rx
+   shrs  r2,rx,#31
+   xor   r3,r2,rx
+   sub   r4,r3,r2
+   Expr: (((x >>s 31) ^ x) - (x >>s 31))
+Found 398 solutions.
+Counters = 2616334, 2626116, 4980027, 134454981, total = 144677458
+Process time = 2.368 secs
