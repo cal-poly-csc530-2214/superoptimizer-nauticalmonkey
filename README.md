@@ -55,4 +55,4 @@ There where no solutions for programs less than 4 operations, I continued to try
 
 When using a vairable the program was not able to find solutions such as y=x in the code brakets. 
 
-
+Going to 5 operations bogs the system somthing fierce and is not reccomended.
