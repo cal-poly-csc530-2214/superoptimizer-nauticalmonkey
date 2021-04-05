@@ -56,3 +56,11 @@ There where no solutions for programs less than 4 operations, I continued to try
 When using a vairable the program was not able to find solutions such as y=x in the code brakets. 
 
 Going to 5 operations bogs the system somthing fierce and is not reccomended.
+
+For the 5 operations solutions *Note* this is with a I9-10900k
+
+Found 3587 solutions.
+
+Counters = 225609, 235391, 2589302, 818086502, 43431951782, total = 44253088586
+
+Process time = 673.891 secs
