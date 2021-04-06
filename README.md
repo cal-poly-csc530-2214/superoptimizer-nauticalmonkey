@@ -20,18 +20,26 @@ Searching for programs with 4 operations.
 Found a 4-operation program:
 
    add   r1,rx,rx
+   
    or    r2,r1,-2
+   
    shl   r3,r2,#3
+   
    sub   r4,r1,r3
+   
    Expr: ((x + x) - (((x + x) | -2) << 3))
    
 
 Found a 4-operation program:
 
    shl   r1,rx,#1
+   
    or    r2,r1,-2
+   
    shl   r3,r2,#3
+   
    sub   r4,r1,r3
+   
    Expr: ((x << 1) - (((x << 1) | -2) << 3))
    
 Found 2 solutions.
